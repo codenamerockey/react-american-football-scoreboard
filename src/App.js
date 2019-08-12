@@ -1,6 +1,7 @@
 //TODO: STEP 1 - Import the useState hook.
 import React, { useState } from 'react';
 import './App.css';
+import Buttons from './Buttons';
 import BottomRow from './BottomRow';
 
 function App() {
@@ -19,10 +20,7 @@ function App() {
 
             {/* TODO STEP 3 - We need to change the hardcoded values in these divs to accept dynamic values from our state. */}
 
-            <div className='home__score'>
-              {/* {fieldGoal === 3 ? setFieldGoal(fieldGoal + 3) : touchdown + 7} */}
-              {homescore}
-            </div>
+            <div className='home__score'>{homescore}</div>
           </div>
           <div className='timer'>00:03</div>
           <div className='away'>
